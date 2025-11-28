@@ -57,6 +57,13 @@ header {
     color: #b91b10;
 }
 
+.headshot-placeholder img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .logo-text {
     font-weight: 600;
     font-size: 1.1rem;
@@ -129,6 +136,29 @@ nav a.active {
     gap: 0.8rem;
     font-size: 0.9rem;
     color: #6b7280;
+}
+
+/* Headshot Image Styling */
+.headshot-placeholder {
+    width: 100%;
+    padding-top: 100%;
+    /* Keeps it perfectly square */
+    border-radius: 50%;
+    /* Makes it a perfect circle */
+    overflow: hidden;
+    /* Ensures image stays inside circle */
+    border: 3px solid #d1d5db;
+    /* Optional light border */
+    position: relative;
+}
+
+.headshot-placeholder img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Crops image nicely */
 }
 
 /* Buttons */
